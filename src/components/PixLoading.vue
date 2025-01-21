@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {onUnmounted, ref, watch} from "vue";
+import { onUnmounted, ref, watch } from "vue";
 
 const { items = 10 } = defineProps<{
   items?: number,

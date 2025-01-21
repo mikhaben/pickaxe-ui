@@ -19,7 +19,7 @@ defineProps<{
     }"
   >
     <pix-loading v-if="loading" borderless :items="6" />
-    <span v-else>
+    <span class="flex items-center gap-1" v-else>
       <slot />
     </span>
   </button>

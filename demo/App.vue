@@ -1,18 +1,31 @@
 <script lang="ts" setup>
-import PixButton from "@/src/components/PixButton.vue";
-import PixCheckbox from '@/src/components/PixCheckbox.vue'
-import { ref } from 'vue'
-import PixNumKeyboard from '@/src/components/PixNumKeyboard.vue'
+import Buttons from '@/demo/Buttons.vue'
 
-const check = ref(false)
+const items = [
+  { title: 'Button', anchor: 'button' },
+  { title: 'Checkbox', anchor: 'checkbox' },
+  { title: 'NumKeyboard', anchor: 'numkeyboard' }
+]
 </script>
 
 <template>
-  <div class="h-full">
-    <pix-button>Click me</pix-button>
+  <div class="h-full flex gap-4 p-3">
 
-    <pix-checkbox v-model="check" check-mark />
+    <div class="border-r border-gray-700 pr-2">
+      <ul class="flex flex-col gap-2">
+        <li
+          v-for="item in items"
+          :key="item.anchor"
+          class="p-2 hover:text-green-500"
+        >
+          <a :href="'#' + item.anchor">{{ item.title }}</a>
+        </li>
+      </ul>
+    </div>
 
-    <pix-num-keyboard />
+    <div class="">
+      <buttons />
+    </div>
+
   </div>
 </template>

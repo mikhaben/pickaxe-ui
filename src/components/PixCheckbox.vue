@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import IdGenerator from '@/src/utils/IdGenerator'
 import { computed } from 'vue'
+import IconCheck from '~icons/pixelarticons/check'
 
 const emit = defineEmits<{
   (event: 'update:modelValue', value: boolean): void
@@ -32,7 +33,7 @@ const checked = computed({
           'ml-3': toggle && checked
         }"
       >
-        <icon-pixel-check v-if="checkMark" class="absolute text-xl"/>
+        <icon-check v-if="checkMark" class="absolute text-xl"/>
       </div>
       <input
         v-model="checked"

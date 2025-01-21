@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { onMounted, onUnmounted, ref, watch } from 'vue'
+import IconArrowBarLeft from '~icons/pixelarticons/arrow-bar-left'
 
 const props = defineProps<{
   maxLength?: number
@@ -62,7 +63,7 @@ function removeVal() {
       :class="{ 'pointer-events-none text-gray-500': input.length === 0 }"
       class="p-2 hover:bg-gray-800 active:text-green-500 flex items-center justify-center col-start-3 row-start-4 select-none outline-none"
     >
-      <icon-pixel-arrow-bar-left />
+      <icon-arrow-bar-left />
     </button>
   </div>
 </template>

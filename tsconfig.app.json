@@ -1,7 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "exclude": [
-    "src/**/__tests__/*"
+    "src/**/__tests__/*",
   ],
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
@@ -17,5 +17,5 @@
     "src/**/*.vue",
     "demo/**/*",
     "demo/**/*.vue"
-  ]
+  ],
 }

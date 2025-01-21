@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import PixButton from '@/src/components/PixButton.vue'
+import IconClose from '~icons/pixelarticons/close'
 
 const emit = defineEmits<{
   (e: 'close'): void
@@ -19,7 +20,7 @@ defineProps<{
         <div class="flex justify-between mb-2">
           <h2 class="text-3xl font-pixel">{{ title }}</h2>
           <pix-button small secondary @click="emit('close')">
-            <icon-pixel-close />
+            <icon-close />
           </pix-button>
         </div>
         <slot name="subtitle" />

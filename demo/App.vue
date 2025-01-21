@@ -11,7 +11,7 @@ const check = ref(false)
   <div class="h-full">
     <pix-button>Click me</pix-button>
 
-    <pix-checkbox v-model="check" toggle />
+    <pix-checkbox v-model="check" check-mark />
 
     <pix-num-keyboard />
   </div>

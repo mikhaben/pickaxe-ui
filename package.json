@@ -1,13 +1,32 @@
 {
   "name": "pickaxe-ui",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "author": "mikhaben",
+  "keywords": [
+    "vue",
+    "vite",
+    "tailwindcss",
+    "typescript",
+    "pickaxe-ui",
+    "ui"
+  ],
+  "license": "MIT",
   "type": "module",
+  "main": "dist/pickaxe-ui.umd.cjs",
+  "module": "dist/pickaxe-ui.js",
+  "style": "dist/pickaxe-ui.css",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
+    "dev": "cross-env VARIANT=demo vite",
+    "build:lib": "cross-env VARIANT=lib run-p type-check build-only",
+    "build:demo": "cross-env VARIANT=demo run-p type-check build-only",
     "build-only": "vite build",
+    "preview": "vite preview",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
@@ -35,6 +54,7 @@
     "unplugin-icons": "^22.0.0",
     "vite": "^6.0.11",
     "vite-plugin-vue-devtools": "^7.7.0",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.0",
+    "cross-env": "^7.0.3"
   }
 }

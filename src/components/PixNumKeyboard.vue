@@ -2,6 +2,7 @@
 import { onMounted, onUnmounted, ref, watch } from 'vue'
 import IconArrowBarLeft from '~icons/pixelarticons/arrow-bar-left'
 
+defineOptions({ name: 'PixNumKeyboard' })
 const props = defineProps<{
   maxLength?: number
 }>()

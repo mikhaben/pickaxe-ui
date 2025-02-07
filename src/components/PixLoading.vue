@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { onUnmounted, ref, watch } from "vue";
 
+defineOptions({ name: 'PixLoading' })
 const { items = 10 } = defineProps<{
   items?: number,
   progressText?: boolean

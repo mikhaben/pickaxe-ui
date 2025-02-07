@@ -2,6 +2,7 @@
 import PixButton from '@/src/components/PixButton.vue'
 import IconClose from '~icons/pixelarticons/close'
 
+defineOptions({ name: 'PixDialog' })
 const emit = defineEmits<{
   (e: 'close'): void
 }>()

@@ -3,6 +3,7 @@ import IdGenerator from '@/src/utils/IdGenerator'
 import { computed } from 'vue'
 import IconCheck from '~icons/pixelarticons/check'
 
+defineOptions({ name: 'PixCheckbox' })
 const emit = defineEmits<{
   (event: 'update:modelValue', value: boolean): void
 }>()
@@ -42,6 +43,6 @@ const checked = computed({
         class="absolute top-0 right-0 bottom-0 left-0 outline-none opacity-0 cursor-pointer"
       />
     </div>
-    <label v-if="label" :for="id" class="ml-2 cursor-pointer">{{ label }}</label>
+    <label v-if="label" :for="id" class="ml-2 cursor-pointer select-none">{{ label }}</label>
   </div>
 </template>

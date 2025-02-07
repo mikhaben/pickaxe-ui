@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import PixLoading from "@/src/components/PixLoading.vue"
+defineOptions({ name: 'PixButton' })
 defineProps<{
+  variant?: "primary" | "secondary" | "tertiary"
   secondary?: boolean
   small?: boolean
   disabled?: boolean

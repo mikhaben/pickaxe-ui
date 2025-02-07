@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 
+defineOptions({ name: 'PixInput' })
 const props = defineProps<{
   modelValue: string
   placeholder?: string

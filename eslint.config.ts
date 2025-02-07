@@ -29,6 +29,7 @@ export default defineConfigWithVueTs(
       'object-curly-spacing': [ 'error', 'always' ],
       'vue/array-bracket-spacing': [ 'error', 'always' ],
       'array-bracket-spacing': [ 'error', 'always' ],
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   },
 )

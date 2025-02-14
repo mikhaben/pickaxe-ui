@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import Buttons from '@/demo/Buttons.vue'
+// import Buttons from '@/demo/Buttons.vue'
+import Preview from '@/demo/Preview.vue'
 
 const items = [
   { title: 'Button', anchor: 'button' },
@@ -24,7 +25,8 @@ const items = [
     </div>
 
     <div class="">
-      <buttons />
+      <preview />
+      <!--<buttons />-->
     </div>
 
   </div>

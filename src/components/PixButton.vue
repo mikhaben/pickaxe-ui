@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <button
-    class="font-pixel p-1 border-2 bg-gray-900 hover:bg-gray-800 active:bg-green-500 select-none flex items-center h-max outline-none"
+    class="font-pixel p-1 border-2 bg-gray-900 hover:bg-gray-800 active:bg-green-500 select-none flex items-center h-max outline-none cursor-pointer"
     :class="{
       'border-gray-700 active:border-green-500': secondary,
       'text-base leading-5': small,

@@ -25,6 +25,7 @@ function pickaxeInit(app: App): void {
 }
 
 export * from '@/src/utils/IdGenerator'
+
 export {
   PixButton,
   PixCheckbox,

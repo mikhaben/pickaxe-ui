@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: 'PixelOperator';
@@ -10,6 +8,21 @@
 @font-face {
   font-family: 'PixelOperatorSC';
   src: url('../fonts/PixelOperatorSC.ttf') format('truetype');
+}
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'PixelOperator', roboto, sans-serif;
+  }
+  .font-pixel-sc {
+    font-family: 'PixelOperatorSC', roboto, sans-serif;
+  }
+}
+
+@theme {
+  /* Don't work */
+  /*---font-pixel: 'PixelOperator';*/
+  /*---font-pixel-sc: 'PixelOperatorSC';*/
 }
 
 body {

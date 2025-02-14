@@ -1,11 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
+import tailwindcss from "@tailwindcss/vite";
 
 export default {
   plugins: [
     vue(),
-    Icons({ compiler: 'vue3' })
+    tailwindcss(),
+    Icons({ compiler: 'vue3' }),
   ],
   resolve: {
     alias: {
